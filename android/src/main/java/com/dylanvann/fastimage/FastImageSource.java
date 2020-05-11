@@ -45,6 +45,10 @@ public class FastImageSource extends ImageSource {
         this(context, source, null);
     }
 
+    public FastImageSource(Context context, String source, @Nullable Headers headers) {
+        this(context, source, 0.0d, 0.0d, headers, false);
+    }
+
     public FastImageSource(Context context, String source, @Nullable Headers headers, @Nullable Boolean cacheOmitURLParams) {
         this(context, source, 0.0d, 0.0d, headers, cacheOmitURLParams);
     }
